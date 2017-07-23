@@ -1,0 +1,207 @@
+/*
+
+Template: potenza global solutions defualt
+Author: potenza global solutions defualt
+Version: 2.0
+Design and Developed by: potenza global solutions defualt
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
+
+*/
+
+ 
+/*================================================
+[  Table of contents  ]
+================================================
+ 
+:: General
+:: font weight 
+:: Page section 
+:: Section title
+:: Button 
+:: background color
+:: Text color
+:: Text color
+:: Input
+:: UL List Color Style
+
+======================================
+[ End table content ]
+======================================*/
+
+/*************************
+		General
+*************************/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body { font-family: 'Raleway', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #323232;}
+
+a{color: #ffffff; }
+a:focus, a:hover { color: #ffffff; text-decoration: none !important; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0px; margin-bottom: 0; }
+h1,.h1 { font-size: 48px; line-height: 60px; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.32);}
+h2,.h2 { font-size: 40px; line-height: 50px; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.32); font-weight: 400; text-transform: uppercase; line-height: 60px; }
+h3,.h3 { font-size: 36px; line-height: 46px; }
+h4,.h4 { font-size: 30px; line-height: 40px; font-weight: 400;}
+h5,.h5 { font-size: 18px; line-height: 22px; }
+h6,.h6 { font-size: 18px; line-height: 18px; }
+ul{margin: 0;}
+
+
+.lead{font-size: 16px; line-height: 24px;}
+
+.text-white { color: #ffffff !important; }
+.text-black { color: #000 !important; }
+.text-muted {color: #636c72 !important;}
+
+/***************************
+Page section margin padding 
+****************************/
+section { padding: 80px 0; }
+
+/*************************
+		background color
+*************************/
+.white-bg{background-color:#ffffff;}
+.green-bg{background-color:#3edacb;}
+.dark-bg{background: #323232;}
+.dark-bg, .dark-bg a{color: #fff !important;}
+.transparent-bg{background: transparent !important;}
+.grey-bg{background: #eeeeee;}
+
+/*************************
+    Button
+***********************/
+.btn {background: #3edacb; text-transform: uppercase; font-weight: 600; padding: 10px 25px 8px; color: #ffffff; font-weight: bold; line-height: 24px;}
+.btn-default:hover,.btn-default:active:focus{background: #fff; color: #3edacb;}
+
+/*************************
+    Header
+***********************/
+.header-right ul{ padding: 0 !important; margin: 0; }
+.social-icon ul li{ ;padding: 0 10px; }
+.social-icon ul li:last-child{padding-right: 0;}
+.header-right ul li a{ color: #ffffff; }
+.header-right li a{ font-size: 16px;}
+
+
+/*************************
+    Banner
+***********************/
+.banner .ver-center{ top: 80%; position: relative;}
+.navbar-form .form-control {height: 50px; border-radius: 5px 0px 0px 5px; border-right: 0; width: 300px; float: left;}
+.navbar-form .btn{padding: 0 25px; height: 50px; line-height: 50px;}
+.phone {-webkit-animation: move 2s infinite alternate; animation: move 2s infinite alternate; position: relative; margin-top: -80px;}
+
+@keyframes move {
+  from { top: 0; bottom: 0; }
+  to   { top: 20px; bottom: 20px; }
+}
+
+/*************************
+    Section
+***********************/
+section .ver-center{position: absolute;}
+.section1{padding: 700px 0 0;}
+.section1:before{content: ""; position: absolute; background: url(../images/plant-img.png) no-repeat left bottom; height: 100%; width: 100%; left: 0; bottom: -100px; z-index: -9;}
+.section1:after{content: ""; position: absolute; background: url(../images/iphone-img2.png) no-repeat right bottom; height: 100%; width: 100%; right: 0; bottom: 50px; z-index: -9;}
+.section1 .ver-center{top: 60%;}
+
+.section2{padding: 330px 0;}
+.section2:after{content: ""; position: absolute; background: url(../images/find-img.png) no-repeat left bottom; height: 100%; width: 50%; left: 0; bottom: 0; background-size: contain;}
+
+
+/*************************
+    contact
+***********************/
+.contact-form .form-control{ border: none; height: 40px; padding: 10px 16px; color: #323232; }
+.contact-form textarea.form-control{ height: auto; }
+.form-group { margin-bottom: 25px;}
+.media-icon .fa {border-radius: 50px; color: #fff; background: #3edacb; width: 40px; height: 40px; line-height: 40px; font-size: 16px; text-align: center;}
+.social-icon li a {color: #323232; font-size: 18px;}
+.social-icon li a:hover {color: #3edacb;}
+.contact-form textarea.form-control {height: 90px;}
+
+[data-overlay]:before{background: -moz-linear-gradient(0deg, rgba(218,161,62,1) 0%, rgba(62,218,203,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(218,161,62,1)), color-stop(100%, rgba(62,218,203,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(0deg, rgba(218,161,62,1) 0%, rgba(62,218,203,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(0deg, rgba(218,161,62,1) 0%, rgba(62,218,203,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(0deg, rgba(218,161,62,1) 0%, rgba(62,218,203,1) 100%); /* ie10+ */
+    background: linear-gradient(90deg, rgba(218,161,62,1) 0%, rgba(62,218,203,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#daa13e', endColorstr='#3edacb',GradientType=1 ); /* ie6-9 */ }
+
+[data-overlay="1"]:before{opacity:0.1;}
+
+
+/*************************
+    Responsive
+***********************/
+@media (max-width: 1600px){
+.section2 {padding: 290px 0;}
+}
+
+
+@media (max-width: 1560px){
+.section1::after{background-size: contain; width: 30%;}
+.section2 {padding: 240px 0;}
+}
+
+@media (max-width: 1200px){
+h1{font-size: 38px; line-height: 50px;}
+h2{font-size: 30px; line-height: 50px;}
+h4{font-size: 24px; line-height: 34px;}
+h5{font-size: 16px; line-height: 22px;}
+.navbar-form .form-control {width: 229px;}
+.navbar-form .btn {font-size: 13px; padding: 0 15px;}
+.section1 {padding: 600px 0 0;}
+.section2 {padding: 180px 0;}
+}
+
+
+@media (max-width: 992px){
+h1{font-size: 30px; line-height: 40px;}
+h2{font-size: 24px; line-height: 40px;}
+h3{font-size: 28px; line-height: 38px;}
+h4{font-size: 15px; line-height: 24px;}
+h5{font-size: 14px; line-height: 22px;}
+.banner .ver-center, .section1 .ver-center {top: 50%;}
+.section1 {padding: 160px 0;}
+.section1::before {background-size: contain;  bottom: -70px; width: 18%;}
+.section2 {padding: 140px 0;}
+
+.form-group {margin-bottom: 15px; }
+.navbar-form .form-control {width: 130px;}
+.navbar-form .btn {font-size: 12px; padding: 0 11px;}
+}
+
+@media (max-width: 767px){
+.navbar-form {border: medium none; box-shadow: none; margin: 0;}
+.logo img {width: 100px;}
+.row-eq-height {display: block;}
+section {padding: 50px 0;}
+.navbar-form .form-control {width: 175px;}
+.section1 {padding: 100px 0;}
+.section2 {padding: 110px 0;}
+}
+
+
+
+@media (max-width: 479px){
+h1 {font-size: 22px; line-height: 32px;}
+h2 {font-size: 18px; line-height: 28px;}
+h3 {font-size: 20px; line-height: 30px;}
+br{display: none;}
+.col-xs-offset-6, .col-xs-offset-1{margin: 0;}
+.valign > [class*="col-"] {display: block; float: none;}
+.site-header + .fullscreen {margin-bottom: -143px; top: -143px;}
+.logo {float: none;}
+.site-header .valign{margin: 0 -15px !important;}
+.header-right ul li a {color: #ffffff; font-size: 13px;}
+.header-right{float: none !important;}
+.navbar-form .form-control {width: 100%;}
+.navbar-form .btn {width: 100%;}
+.section1::after, .section1::before, .section2::after{display: none;}
+.section1 h4{text-align: left;}
+}
